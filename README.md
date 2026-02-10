@@ -1,17 +1,17 @@
 PG Life – Accommodation Finder Web Application
 Overview
 
-PG Life is a full-stack web application developed to assist users in discovering and managing Paying Guest (PG) accommodations across multiple cities. The application provides secure user authentication, city-based property listings, detailed property views, and a personalized dashboard for managing interested properties. The system simulates a real-world accommodation discovery platform with a structured frontend–backend architecture.
+PG Life is a full-stack web application designed to help users discover and manage Paying Guest (PG) accommodations across multiple cities. The application provides secure user authentication, city-based property listings, detailed property information, and a personalized dashboard for managing shortlisted properties. The system reflects a real-world accommodation discovery platform with a clear separation between frontend and backend components.
 
 Objectives
 
-To provide a centralized platform for PG accommodation discovery
+Provide a centralized platform for PG accommodation discovery
 
-To implement secure user authentication and session handling
+Implement secure user authentication and session management
 
-To enable users to shortlist and manage preferred properties
+Enable users to shortlist and manage preferred properties
 
-To deliver a responsive and intuitive user interface
+Deliver a responsive and user-friendly interface
 
 Key Features
 
@@ -19,13 +19,13 @@ Secure user signup and login using PHP sessions
 
 City-wise PG accommodation listings
 
-Detailed property information including amenities and pricing
+Detailed property pages with amenities and pricing
 
 Interested (wishlist) functionality with real-time updates
 
 Personalized user dashboard
 
-Responsive UI using Bootstrap
+Responsive UI built with Bootstrap
 
 Technology Stack
 Frontend
@@ -54,13 +54,25 @@ System Architecture
 
 The application follows a client–server architecture:
 
-Frontend handles user interaction and UI rendering
+Frontend
 
-Backend processes business logic and database communication
+Handles user interaction and UI rendering
 
-AJAX is used for asynchronous operations such as interest toggling
+Built using HTML, CSS, Bootstrap, and JavaScript
 
-MySQL database stores user, property, and interest data
+Backend
+
+Processes business logic
+
+Manages authentication and database communication using PHP
+
+Asynchronous Communication
+
+AJAX is used for operations such as interest toggling without page reloads
+
+Database
+
+MySQL stores user, property, and interest-related data
 
 Project Structure
 pg-life-accommodation-finder/
@@ -81,7 +93,7 @@ pg-life-accommodation-finder/
 │   │   └── dashboard.css
 │   │
 │   ├── img/
-│   │   └── application assets and icons
+│   │   └── Application assets and icons
 │   │
 │   ├── index.php
 │   ├── property_list.php
@@ -106,29 +118,29 @@ Steps to Run the Application
 
 Clone or extract the repository.
 
-Move the project folder into the web server directory:
+Move the project folder to the web server root directory:
 
 htdocs/
 
 
 Start Apache and MySQL services.
 
-Open phpMyAdmin and create a database.
+Open phpMyAdmin and create a new database.
 
 Import the provided SQL file (if available).
 
-Update database connection credentials in PHP files if required.
+Update database credentials in PHP configuration files if required.
 
-Access the application via browser:
+Access the application in a browser:
 
 http://localhost/pg-life-accommodation-finder/PGLIFE/
 
 Backend API Endpoints
 Endpoint	Description
 login_submit.php	Handles user authentication
-signup_submit.php	Handles new user registration
+signup_submit.php	Handles user registration
 toggle_interested.php	Adds or removes interested properties
-handle_interested_dashboard.php	Retrieves dashboard data
+handle_interested_dashboard.php	Retrieves user dashboard data
 Functional Modules
 
 Authentication Module
@@ -153,15 +165,15 @@ Limitations
 
 No admin panel for property management
 
-Limited search and filtering capabilities
+Limited search and filtering options
 
 Basic authentication security
 
 Future Enhancements
 
-Advanced search and filtering options
+Advanced property search and filtering
 
-Google Maps integration
+Map-based property visualization
 
 Ratings and reviews system
 
@@ -173,3 +185,4 @@ Author
 
 Gayathri Devi
 Integrated M.Tech – Software Engineering
+Full-Stack Web Developer
